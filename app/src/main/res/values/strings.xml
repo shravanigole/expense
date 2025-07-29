@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SplitEase</string>
+    
+    <!-- Add Trip Screen -->
+    <string name="trip_title">Trip Title</string>
+    <string name="trip_description">Description (Optional)</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="add_member">Add Member</string>
+    <string name="save_trip">Save Trip</string>
+    <string name="member_already_added">Member already added</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="error_start_date_required">Start date is required</string>
+    <string name="error_end_date_required">End date is required</string>
+    <string name="error_end_date_before_start">End date cannot be before start date</string>
+    <string name="error_saving_trip">Error saving trip</string>
+    <string name="success_trip_saved">Trip saved successfully</string>
+    
+    <!-- Trip List Screen -->
+    <string name="no_trips">No trips yet</string>
+    <string name="add_trip">Add new trip</string>
+    <string name="total_expenses_format">Total Expenses: ₹%.2f</string>
+    <string name="trip_image">Trip Image</string>
+    <string name="delete_trip_confirmation">Are you sure you want to delete this trip and all its expenses?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+</resources>

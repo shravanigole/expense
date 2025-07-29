@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tripListFragment">
+
+    <fragment
+        android:id="@+id/tripListFragment"
+        android:name="com.example.expense.fragments.TripListFragment"
+        android:label="Trips">
+        <action
+            android:id="@+id/action_tripList_to_tripDetails"
+            app:destination="@id/tripDetailsFragment" />
+        <action
+            android:id="@+id/action_tripList_to_addTrip"
+            app:destination="@id/addTripFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tripDetailsFragment"
+        android:name="com.example.expense.fragments.TripDetailsFragment"
+        android:label="Trip Details">
+        <argument
+            android:name="tripId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTripFragment"
+        android:name="com.example.expense.fragments.AddTripFragment"
+        android:label="Add Trip">
+        <!-- Optional arguments if needed -->
+    </fragment>
+</navigation>

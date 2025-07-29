@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="trip"
+            type="com.example.expense.data.entity.Trip" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tripName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{trip.title}"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Trip Name"/>
+
+            <TextView
+                android:id="@+id/tripDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@{trip.startDate}"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                tools:text="Jan 1, 2024"/>
+
+            <TextView
+                android:id="@+id/tripMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text='@{"Members: " + String.join(", ", trip.members)}'
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                tools:text="Members: John, Jane, Bob"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
